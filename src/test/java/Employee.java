@@ -33,17 +33,17 @@ public class Employee {
             return (this.salary *0.05);
 
     }
-     void printMaasBilgileri(){
-         System.out.println("====================");
-         System.out.println("Name: " + this.name);
-         System.out.println("Base salary: " + this.salary);
-         System.out.println("Working hours: "+ this.workingHours);
-         System.out.println("Year of hire: "+ this.hireYear);
-         System.out.println("Tax: "+ tax());
-         System.out.println("Bonus: "+ bonus());
-         System.out.println("Salary raise: "+ raiseSalary());
-         System.out.println("Salary with total taxes and bonuses: "+ (this.salary - tax() + bonus()));
-         System.out.println("Net pay: "+ (this.salary - tax() + bonus() + raiseSalary()));
+     void printMaasBilgileri() {
+        System.out.println("====================");
+        System.out.println("Name: " + this.name +
+                "\nBase salary: " + this.salary +
+                "\nWorking hours: " + this.workingHours +
+                "\nYear of hire: " + this.hireYear +
+                "\nTax: " + tax() +
+                "\nBonus: " + bonus() +
+                "\nSalary raise: " + raiseSalary() +
+                "\nSalary with total taxes and bonuses: " + (this.salary - tax() + bonus()) +
+                "\nNet pay: " + (this.salary - tax() + bonus() + raiseSalary()));
 
 
 
